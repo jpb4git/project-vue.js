@@ -22,19 +22,31 @@ Object.keys(bus).forEach(function (key) {
 
 //3.2 Object.values
 
+Object.values(data).forEach(function (element){
+    console.log(element);
+    for (var node in element) {
+        if (node === "texte" || node === "dateDebut" ||  node === "dateFin"){
+            console.log(node + " = " + node[node]);
+            }
+    }
+});
+
+console.log('---------------------------------------------')
 // itération dans un un d'objet
 Object.keys(data).forEach(function (key) {
     // on récupere l'object 
-    var obj = data[key];
-    //console.log(obj)
-   Object.keys(obj).forEach(function (node) {
+    let obj = data[key];
+   // console.log(obj)
+   /*Object.keys(obj).forEach(function (node) {
    // for (var node in obj) {
         if (node === "texte" || node === "dateDebut" ||  node === "dateFin"){
         console.log(node + " = " + obj[node]);
         }
         
     });
+    */
 });
+
 
 
 
