@@ -18,13 +18,12 @@ console.log(age)
 
 
 
-Object.values(data).forEach(function (element){
-    console.log(element);
-    for (var node in element) {
-        if (node === "texte" || node === "dateDebut" ||  node === "dateFin"){
-            console.log(node + " = " + node[node]);
-            }
-    }
+Object.keys(data).forEach(function (element){
+    Object.entries(data[element]).forEach(function (el){
+        if (el[0] === "texte" || el[0] === "dateDebut" ||  el[0] === "dateFin"){  
+            console.log(el[0] + " = " + el[1]);  
+        }
+    });
 });
 
 
