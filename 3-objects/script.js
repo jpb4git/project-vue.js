@@ -11,7 +11,29 @@ const bus = {
     },
     equipments: ['sae', 'tft', 'speech']
 }
+//console.log(data)
+
+
+// itération pour toutes les clés presente dans l'object bus
+Object.keys(bus).forEach(function (key) {
+    //console.log('Key  :' + key + " | Value :" + bus[key] )
+ });
+
 
 //3.2 Object.values
 
-console.log(data)
+// itération dans un un d'objet
+for (var key in data) {
+    var obj = data[key];
+    for (var node in obj) {
+        if (node === "texte")
+        console.log(node + " = " + obj[node]);
+    }
+}
+
+
+
+
+
+
+
