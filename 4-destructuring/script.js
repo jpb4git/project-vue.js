@@ -17,8 +17,10 @@ console.log(age)
 //4.2 Application
 
 Object.values(data).forEach(function(element){
+    
+    let [texte,Debut,Fin] = [element.texte,element.dateDebut,element.dateFin];
 
-    console.log(element.texte + ' ' + element.dateDebut +' '+ element.dateFin)
+    console.log(texte + ' ' + Debut +' '+ Fin)
 
 });
 
