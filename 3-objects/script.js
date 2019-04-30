@@ -29,9 +29,10 @@ Object.keys(data).forEach(function (key) {
     //console.log(obj)
    Object.keys(obj).forEach(function (node) {
    // for (var node in obj) {
-        if (node === "texte"){
+        if (node === "texte" || node === "dateDebut" ||  node === "dateFin"){
         console.log(node + " = " + obj[node]);
         }
+        
     });
 });
 
