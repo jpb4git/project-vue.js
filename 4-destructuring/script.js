@@ -7,25 +7,25 @@ const [a, b] = [1, 2, 3, 4]
 //console.log(b)
 
 // même histoire mais avec des objets
-const {first, last} = {first: 'Paul', last: 'Henta', age: 35}
+const {first, last,age} = {first: 'Paul', last: 'Henta', age: 35}
 console.log(first)
 console.log(last)
 
+console.log(age)
+
 //4.2 Application
 
-console.log(getThird(data,3))
-//let dat = data;
-//console.log(dat);
 
 
-function getThird(data,indice){
-  let count = 0;
-  let tempEl
-    Object.keys(data).forEach(function (element) {
-        if (count === (indice-1)){   
-            tempEl = element   
-        }
-        count++
-    });
-    return tempEl;
-}
+
+Object.values(data).forEach(function (element){
+    console.log(element);
+    for (var node in element) {
+        if (node === "texte" || node === "dateDebut" ||  node === "dateFin"){
+            console.log(node + " = " + node[node]);
+            }
+    }
+});
+
+
+

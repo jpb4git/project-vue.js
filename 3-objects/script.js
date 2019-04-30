@@ -25,7 +25,7 @@ Object.keys(bus).forEach(function (key) {
 Object.values(data).forEach(function (element){
     console.log(element);
     for (var node in element) {
-        if (node === "texte" || node === "dateDebut" ||  node === "dateFin"){
+        if (node === "texte" ){
             console.log(node + " = " + node[node]);
             }
     }
