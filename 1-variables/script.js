@@ -1,8 +1,8 @@
 //1.1 Types simples
 
-var name = 'Jacques'
-var age = 80
-var useless = 'something'
+const name = 'Jacques'
+let age = 80
+let useless = 'something'
 
 console.log(name, age, useless)
 
