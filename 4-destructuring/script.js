@@ -18,9 +18,10 @@ console.log(age)
 
 Object.values(data).forEach(function(element){
     
-    let [texte,Debut,Fin] = [element.texte,element.dateDebut,element.dateFin];
+    //destructuring 
+    let {texte,dateDebut,dateFin} = element;
 
-    console.log(texte + ' ' + Debut +' '+ Fin)
+    console.log(texte + ' ' + dateDebut +' '+ dateFin)
 
 });
 
