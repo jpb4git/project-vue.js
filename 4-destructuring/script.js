@@ -1,3 +1,4 @@
+"use strict";
 //4.1 Découverte
 // création de deux constantes a et b auquelles on affecte respectivement  
 //les valeurs contenues dans le tableau affecté pour chaque indice (a est dans un tableau à l'indice 0 et prendra la valeur placée au même indice 
@@ -15,9 +16,13 @@ console.log(age)
 
 //4.2 Application
 
+Object.values(data).forEach(function(element){
 
+    console.log(element.texte + ' ' + element.dateDebut +' '+ element.dateFin)
 
+});
 
+/*
 Object.keys(data).forEach(function (element){
     Object.entries(data[element]).forEach(function (el){
         if (el[0] === "texte" || el[0] === "dateDebut" ||  el[0] === "dateFin"){  
@@ -25,6 +30,8 @@ Object.keys(data).forEach(function (element){
         }
     });
 });
+*/
+
 
 
 
